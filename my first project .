@@ -1,0 +1,1885 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    cout << " ---------WELCOME TO MY SHOP--------- \n"<< "Here ,you can find Shirt,Pant,Shoe."<<  endl;
+    cout << "What do you want to buy,sir?" << endl;
+    string ki;
+    getline(cin,ki);
+    if(ki=="shirt" || ki=="Shirt"||ki=="SHIRT"){                                                          //shirt kenar jonno
+        cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+        string f;
+        getline(cin,f);
+        if(f=="fullsleeve"){                                                                               //fullsleeve shirt kenar jonno
+            cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << h*1000 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                                //fullsleeve shirt ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                if(ki=="PANT" || ki=="Pant" || ki=="pant"){
+                     cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+        string fp;
+        getline(cin,fp);
+        if(fp=="fullpant"){                                                                                //fullpant kenar jonno
+            cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;                         //price
+            cout<< "Do you want to buy shoe,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*2000+h*1000 << "taka" << endl; 
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                             //fullpant ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                 cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:"<< ph*2000+h*1000+ shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                        //price                                                                                         //akhane kaj korte hobe 
+            }
+
+        }
+        else if(fp=="halfpant"){                                                                                                          //halfpant kenar jonno
+           cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;                                 //price
+            cout<< "Do you want to buy shoe,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*1000 +h*1000<< "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                                   //halfpant ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                 cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl; 
+            cout<< "\nthe total amount you have to pay:"<< shh*2200+ph*1000+h*1000<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                                                                                                                           //akhane kaj korte hobe 
+            } 
+        }
+                }  
+                
+               else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;  
+                cout<< "\nDo you want to buy pant,sir?"<< endl;
+                string aaa;
+                getline(cin,aaa);
+                if(aaa=="no" || aaa=="NO"){
+                    cout<< "\nthank you,sir.the total amount you have to pay:"<< h*1000+shh*2200<< "taka" << endl;
+                    cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                else{
+                        cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+        string fp;
+        getline(cin,fp);
+        if(fp=="fullpant"){                                                                                //fullpant kenar jonno
+            cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;  
+            cout<< "\nthe total amount you have to pay:"<<  h*1000+shh*2200+ph*2000 << "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                                                                                     //akhane kaj korte hobe 
+                }
+                else{
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;  
+            cout<< "\nthe total amount you have to pay:"<<  h*1000+shh*2200+ph*1000 << "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+
+               }                                                                                            //akhane kaj korte hobe 
+            }
+        }
+        
+
+    }
+    else {                                                                                               // halfsleeve shirt ar jonno
+             cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;                            //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+             if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << h*850 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else {
+ //akhane
+        cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                if(ki=="PANT" || ki=="Pant" || ki=="pant"){
+                     cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+        string fp;
+        getline(cin,fp);
+        if(fp=="fullpant"){                                                                                //fullpant kenar jonno
+            cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;                         //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*2000+h*850 << "taka" << endl;  
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                            //fullpant ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                 cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:"<< ph*2000+h*850+ shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                        //price                                                                                         //akhane kaj korte hobe 
+            }
+
+        }
+        else if(fp=="halfpant"){                                                                                                          //halfpant kenar jonno
+           cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;                                 //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*1000 +h*850<< "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                                   //halfpant ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                 cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl; 
+            cout<< "\nthe total amount you have to pay:"<< shh*2200+ph*1000+h*850<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                                                                                                                           //akhane kaj korte hobe 
+            } 
+        }
+                }  
+                
+               else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;  
+                cout<< "\nDo you want to buy pant,sir?"<< endl;
+                string aaa;
+                getline(cin,aaa);
+                if(aaa=="no" || aaa=="NO"){
+                    cout<< "\nthank you,sir.the total amount you have to pay:"<< h*850+shh*2200<< "taka" << endl;
+                    cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                else{
+                        cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+        string fp;
+        getline(cin,fp);
+        if(fp=="fullpant"){                                                                                //fullpant kenar jonno
+            cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;  
+            cout<< "\nthe total amount you have to pay:"<<  h*850+shh*2200+ph*2000 << "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                                                                                     //akhane kaj korte hobe 
+                }
+                else{
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;  
+            cout<< "\nthe total amount you have to pay:"<<  h*850+shh*2200+ph*1000 << "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+
+               }                                                                                            //akhane kaj korte hobe 
+            }       
+        
+                                                                                                           //akhane kaj korte hobe 
+            }
+        }
+
+
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    else if(ki=="Pant"|| ki=="pant" || ki=="PANT"){
+        cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+        string fp;
+        getline(cin,fp);
+        if(fp=="fullpant"){                                                                                //fullpant kenar jonno
+            cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;                         //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*2000 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                              //fullpant ar dam
+            }
+
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                if(ki=="shirt"){
+                    cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+                     string f;
+                     getline(cin,f);
+                     if(f=="fullsleeve"){
+                        cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy shoe,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< h*1000+ph*2000<< "taka"<< endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:" << h*1000+ph*2000+shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl; 
+            }
+        
+                     }
+
+
+
+
+                     else{
+           cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy shoe,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< h*850+ph*2000<< "taka"<< endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:" << h*850+ph*2000+shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl; 
+            }
+            
+                     }
+                }
+
+
+
+                else{//shoe pant 
+                    cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;                         //price
+            cout<< "Do you want to buy shirt,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< ph*2000+shh*2200<< "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                 cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+        string f;
+        getline(cin,f);
+        if(f=="fullsleeve"){                                                                               //fullsleeve shirt kenar jonno
+            cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<<"\nthe total amount you have to pay:"<<h*1000+ph*2000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+        }
+        else{
+           cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;
+            cout<<"\nthe total amount you have to pay:"<<h*850+ph*2000+shh*2200<< "taka"<<endl; 
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+        }
+            }       
+                }                                                                                                          //akhane kaj korte hobe 
+            }
+        }
+
+
+        else if(fp=="halfpant"){                                                                          //halfpant kenar jonno
+           cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;                         //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*1000 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                              //fullpant ar dam
+            }
+
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                if(ki=="shirt"){
+                    cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+                     string f;
+                     getline(cin,f);
+                     if(f=="fullsleeve"){
+                        cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy shoe,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< h*1000+ph*1000<< "taka"<< endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:" << h*1000+ph*1000+shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl; 
+            }
+        
+                     }
+
+
+
+
+                     else{
+           cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy shoe,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< h*850+ph*1000<< "taka"<< endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:" << h*850+ph*1000+shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl; 
+            }
+            
+                     }
+                }
+
+
+
+                else{//shoe pant 
+                    cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;                         //price
+            cout<< "Do you want to buy shirt,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< ph*1000+shh*2200<< "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                 cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+        string f;
+        getline(cin,f);
+        if(f=="fullsleeve"){                                                                               //fullsleeve shirt kenar jonno
+            cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<<"\nthe total amount you have to pay:"<<h*1000+ph*1000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+        }
+        else{
+           cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;
+            cout<<"\nthe total amount you have to pay:"<<h*850+ph*1000+shh*2200<< "taka"<<endl; 
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+        }
+            }            
+                }                                                                                                          //akhane kaj korte hobe 
+            }
+        }
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    else if(ki=="shoe" || ki=="Shoe" || ki=="SHOE"){                                                            //shoe ar jonoo
+         cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;                         //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << shh*2200 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                              //shoe ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                if(ki=="shirt"){
+                   cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+                   string f;
+                   getline(cin,f); 
+                   if(f=="fullsleeve"){
+                    cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy pant,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << h*1000+shh*2200 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                                //fullsleeve shirt ar dam
+            }
+            else{//pant kinbe kina 
+               cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+                string fp;
+                getline(cin,fp);
+                if(fp=="fullpant"){
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl; 
+            cout<<"\nthe total amount you have to pay:"<< h*1000+shh*2200+ph*2000<<"taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                else{//   halfpant
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl; 
+            cout<<"\nthe total amount you have to pay:"<< h*1000+shh*2200+ph*1000<<"taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                
+            }
+                   }
+                   else{   //halfsleeve
+                     cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;
+            cout<< "Do you want to buy pant,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << h*850+shh*2200 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                                //fullsleeve shirt ar dam
+            }
+            else{//pant kinbe kina 
+               cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+                string fp;
+                getline(cin,fp);
+                if(fp=="fullpant"){
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl; 
+            cout<<"\nthe total amount you have to pay:"<< h*850+shh*2200+ph*2000<<"taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                else{//   halfpant
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl; 
+            cout<<"\nthe total amount you have to pay:"<< h*850+shh*2200+ph*1000<<"taka"<< endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                
+            }
+                   }
+                }
+                else{//pant 
+                    cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+                   string fp;
+                   getline(cin,fp);
+                   if(fp=="fullpant"){//fullpant
+                     cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;                         //price
+            cout<< "Do you want to buy shirt,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*2000+shh*2200 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                              //fullpant ar dam
+            }
+            else{
+              cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+                   string f;
+                   getline(cin,f); 
+                   if(f=="fullsleeve"){
+                    cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<<"the total amount you have to pay:"<< h*1000+ph*2000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                   }
+                   else{//halfsleeve
+                    cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;
+            cout<<"the total amount you have to pay:"<< h*850+ph*2000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                   }  
+            }
+                   }
+                   else{ //halfpant
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;                         //price
+            cout<< "Do you want to buy shirt,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*1000+shh*2200 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                              //fullpant ar dam
+            }
+            else{
+              cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+                   string f;
+                   getline(cin,f); 
+                   if(f=="fullsleeve"){
+                    cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<<"the total amount you have to pay:"<< h*1000+ph*1000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                   }
+                   else{//halfsleeve
+                    cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;
+            cout<<"the total amount you have to pay:"<< h*850+ph*1000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                   }  
+            }
+                   }
+                }                
+                }                                                                                                          //akhane kaj korte hobe 
+            }
+     else {
+        cout << "--SORRY, SIR.THIS PRODUCT IS NOT AVAILABLE--\n Do you want to by which we have?"<<endl;
+        string yes;
+        getline(cin,yes);
+
+        if(yes=="yes"|| yes=="YES" || yes=="Yes"){                                                           //kaj kora lagbe 
+            cout << "What do you want to buy,sir?" << endl;
+    string ki;
+    getline(cin,ki);
+    if(ki=="shirt" || ki=="Shirt"||ki=="SHIRT"){                                                          //shirt kenar jonno
+        cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+        string f;
+        getline(cin,f);
+        if(f=="fullsleeve"){                                                                               //fullsleeve shirt kenar jonno
+            cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << h*1000 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                                //fullsleeve shirt ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                if(ki=="PANT" || ki=="Pant" || ki=="pant"){
+                     cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+        string fp;
+        getline(cin,fp);
+        if(fp=="fullpant"){                                                                                //fullpant kenar jonno
+            cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;                         //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*2000+h*1000 << "taka" << endl; 
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                             //fullpant ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                 cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:"<< ph*2000+h*1000+ shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                        //price                                                                                         //akhane kaj korte hobe 
+            }
+
+        }
+        else if(fp=="halfpant"){                                                                                                          //halfpant kenar jonno
+           cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;                                 //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*1000 +h*1000<< "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                                   //halfpant ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                 cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl; 
+            cout<< "\nthe total amount you have to pay:"<< shh*2200+ph*1000+h*1000<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                                                                                                                           //akhane kaj korte hobe 
+            } 
+        }
+                }  
+                
+               else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;  
+                cout<< "\nDo you want to buy pant,sir?"<< endl;
+                string aaa;
+                getline(cin,aaa);
+                if(aaa=="no" || aaa=="NO"){
+                    cout<< "\nthank you,sir.the total amount you have to pay:"<< h*1000+shh*2200<< "taka" << endl;
+                    cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                else{
+                        cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+        string fp;
+        getline(cin,fp);
+        if(fp=="fullpant"){                                                                                //fullpant kenar jonno
+            cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;  
+            cout<< "\nthe total amount you have to pay:"<<  h*1000+shh*2200+ph*2000 << "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                                                                                     //akhane kaj korte hobe 
+                }
+                else{
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;  
+            cout<< "\nthe total amount you have to pay:"<<  h*1000+shh*2200+ph*1000 << "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+
+               }                                                                                            //akhane kaj korte hobe 
+            }
+        }
+        
+
+    }
+    else {                                                                                               // halfsleeve shirt ar jonno
+             cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;                            //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+             if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << h*850 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else {
+ //akhane
+        cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                if(ki=="PANT" || ki=="Pant" || ki=="pant"){
+                     cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+        string fp;
+        getline(cin,fp);
+        if(fp=="fullpant"){                                                                                //fullpant kenar jonno
+            cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;                         //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*2000+h*850 << "taka" << endl;  
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                            //fullpant ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                 cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:"<< ph*2000+h*850+ shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                        //price                                                                                         //akhane kaj korte hobe 
+            }
+
+        }
+        else if(fp=="halfpant"){                                                                                                          //halfpant kenar jonno
+           cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;                                 //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*1000 +h*850<< "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                                   //halfpant ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                 cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl; 
+            cout<< "\nthe total amount you have to pay:"<< shh*2200+ph*1000+h*850<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                                                                                                                           //akhane kaj korte hobe 
+            } 
+        }
+                }  
+                
+               else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;  
+                cout<< "\nDo you want to buy pant,sir?"<< endl;
+                string aaa;
+                getline(cin,aaa);
+                if(aaa=="no" || aaa=="NO"){
+                    cout<< "\nthank you,sir.the total amount you have to pay:"<< h*850+shh*2200<< "taka" << endl;
+                    cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                else{
+                        cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+        string fp;
+        getline(cin,fp);
+        if(fp=="fullpant"){                                                                                //fullpant kenar jonno
+            cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;  
+            cout<< "\nthe total amount you have to pay:"<<  h*850+shh*2200+ph*2000 << "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;                                                                                     //akhane kaj korte hobe 
+                }
+                else{
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;  
+            cout<< "\nthe total amount you have to pay:"<<  h*850+shh*2200+ph*1000 << "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+
+               }                                                                                            //akhane kaj korte hobe 
+            }       
+        
+                                                                                                           //akhane kaj korte hobe 
+            }
+        }
+
+
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    else if(ki=="Pant"|| ki=="pant" || ki=="PANT"){
+        cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+        string fp;
+        getline(cin,fp);
+        if(fp=="fullpant"){                                                                                //fullpant kenar jonno
+            cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;                         //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*2000 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                              //fullpant ar dam
+            }
+
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                if(ki=="shirt"){
+                    cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+                     string f;
+                     getline(cin,f);
+                     if(f=="fullsleeve"){
+                        cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy shoe,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< h*1000+ph*2000<< "taka"<< endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:" << h*1000+ph*2000+shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl; 
+            }
+        
+                     }
+
+
+
+
+                     else{
+           cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy shoe,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< h*850+ph*2000<< "taka"<< endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:" << h*850+ph*2000+shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl; 
+            }
+            
+                     }
+                }
+
+
+
+                else{//shoe pant 
+                    cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;                         //price
+            cout<< "Do you want to buy shirt,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< ph*2000+shh*2200<< "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                 cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+        string f;
+        getline(cin,f);
+        if(f=="fullsleeve"){                                                                               //fullsleeve shirt kenar jonno
+            cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<<"\nthe total amount you have to pay:"<<h*1000+ph*2000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+        }
+        else{
+           cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;
+            cout<<"\nthe total amount you have to pay:"<<h*850+ph*2000+shh*2200<< "taka"<<endl; 
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+        }
+            }       
+                }                                                                                                          //akhane kaj korte hobe 
+            }
+        }
+
+
+        else if(fp=="halfpant"){                                                                          //halfpant kenar jonno
+           cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;                         //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*1000 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                              //fullpant ar dam
+            }
+
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                if(ki=="shirt"){
+                    cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+                     string f;
+                     getline(cin,f);
+                     if(f=="fullsleeve"){
+                        cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy shoe,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< h*1000+ph*1000<< "taka"<< endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:" << h*1000+ph*1000+shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl; 
+            }
+        
+                     }
+
+
+
+
+                     else{
+           cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy shoe,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< h*850+ph*1000<< "taka"<< endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;
+            cout << "\nthe total amount you have to pay:" << h*850+ph*1000+shh*2200<< "taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl; 
+            }
+            
+                     }
+                }
+
+
+
+                else{//shoe pant 
+                    cout<< "\nPlease tell me your shoe size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;                         //price
+            cout<< "Do you want to buy shirt,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no"){
+                cout << "\nthe total amount you have to pay:"<< ph*1000+shh*2200<< "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;
+            }
+            else{
+                 cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+        string f;
+        getline(cin,f);
+        if(f=="fullsleeve"){                                                                               //fullsleeve shirt kenar jonno
+            cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<<"\nthe total amount you have to pay:"<<h*1000+ph*1000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+        }
+        else{
+           cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;
+            cout<<"\nthe total amount you have to pay:"<<h*850+ph*1000+shh*2200<< "taka"<<endl; 
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+        }
+            }            
+                }                                                                                                          //akhane kaj korte hobe 
+            }
+        }
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    else if(ki=="shoe" || ki=="Shoe" || ki=="SHOE"){                                                            //shoe ar jonoo
+         cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int shh;
+            cin>> shh;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2200 taka."<< endl;                         //price
+            cout<< "Do you want to buy anything else,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << shh*2200 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                              //shoe ar dam
+            }
+            else {
+                cout << "What do you want to buy?"<< endl;
+                string ki;
+                getline(cin,ki);
+                if(ki=="shirt"){
+                   cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+                   string f;
+                   getline(cin,f); 
+                   if(f=="fullsleeve"){
+                    cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<< "Do you want to buy pant,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << h*1000+shh*2200 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                                //fullsleeve shirt ar dam
+            }
+            else{//pant kinbe kina 
+               cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+                string fp;
+                getline(cin,fp);
+                if(fp=="fullpant"){
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl; 
+            cout<<"\nthe total amount you have to pay:"<< h*1000+shh*2200+ph*2000<<"taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                else{//   halfpant
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl; 
+            cout<<"\nthe total amount you have to pay:"<< h*1000+shh*2200+ph*1000<<"taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                
+            }
+                   }
+                   else{   //halfsleeve
+                     cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;
+            cout<< "Do you want to buy pant,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << h*850+shh*2200 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                                //fullsleeve shirt ar dam
+            }
+            else{//pant kinbe kina 
+               cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+                string fp;
+                getline(cin,fp);
+                if(fp=="fullpant"){
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl; 
+            cout<<"\nthe total amount you have to pay:"<< h*850+shh*2200+ph*2000<<"taka" << endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                else{//   halfpant
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl; 
+            cout<<"\nthe total amount you have to pay:"<< h*850+shh*2200+ph*1000<<"taka"<< endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                }
+                
+            }
+                   }
+                }
+                else{//pant 
+                    cout<< "\nDo you want to buy fullpant or halfpant,sir?"<< endl;
+                   string fp;
+                   getline(cin,fp);
+                   if(fp=="fullpant"){//fullpant
+                     cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:2000 taka."<< endl;                         //price
+            cout<< "Do you want to buy shirt,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*2000+shh*2200 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                              //fullpant ar dam
+            }
+            else{
+              cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+                   string f;
+                   getline(cin,f); 
+                   if(f=="fullsleeve"){
+                    cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<<"the total amount you have to pay:"<< h*1000+ph*2000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                   }
+                   else{//halfsleeve
+                    cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;
+            cout<<"the total amount you have to pay:"<< h*850+ph*2000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                   }  
+            }
+                   }
+                   else{ //halfpant
+                    cout<< "ok.please tell me do you buy zens or gebadin" << endl;
+            string zg;
+            getline(cin,zg);
+            cout<< "\nPlease tell me your size?"<< endl;
+            int psize;
+            cin >> psize;
+            cin.ignore();
+            cout<< "\nPlease tell me how many do you want to buy?" << endl;
+            int ph;
+            cin>> ph;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;                         //price
+            cout<< "Do you want to buy shirt,sir?"<<endl;
+            string ae;
+            getline(cin,ae);
+            if(ae=="no" || ae=="NO" || ae=="No"){
+                cout << "\nok.you have to pay:" << ph*1000+shh*2200 << "taka" << endl;
+                cout<< "\n\n------thank you,sir------\n\n"<< endl;                              //fullpant ar dam
+            }
+            else{
+              cout<< "\nDo you want fullsleeve or halfsleeve,sir?"<< endl;
+                   string f;
+                   getline(cin,f); 
+                   if(f=="fullsleeve"){
+                    cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:1000 taka."<< endl;
+            cout<<"the total amount you have to pay:"<< h*1000+ph*1000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                   }
+                   else{//halfsleeve
+                    cout<< "\nPlease,tell me your size."<< endl;
+           int size;
+           cin >> size;
+           cin.ignore();
+            cout<< "\nAnd please,tell me how many do you want to buy,sir?"<< endl;
+            int h;
+            cin >> h;
+            cin.ignore();
+            cout<< "\nThank you,sir.The price of per piece is:850 taka."<< endl;
+            cout<<"the total amount you have to pay:"<< h*850+ph*1000+shh*2200<< "taka"<<endl;
+            cout<< "\n\n------thank you,sir------\n\n"<< endl;
+                   }  
+            }
+                   }
+                }                
+                }                                                                                                          //akhane kaj korte hobe 
+            }
+
+        } 
+        else{
+            cout<< "\n\n\n\n--------THANK YOU,SIR--------\n\n\n"<< endl;
+        }
+    }
+
+
+
+   
+}
+
+
